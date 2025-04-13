@@ -1,180 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV - Carlus Innocent</title>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png" />
-
-  <!-- Google Font (Montserrat) -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-
-  <!-- Feather Icons -->
-  <script src="https://unpkg.com/feather-icons"></script>
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/address-card-solid.svg" type="image/x-icon">
+    <title>ACI-portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/1ef7b15859.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>ICA</h1>
+                    Technologies
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, <br>I'm <span>Carlus Innocent</span> <br>From Uganda</h1>
+            </div>
+        </div>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container">
-      <h1 class="logo">Carlus Innocent</h1>
-      <nav class="nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="social-links">
-        <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter"><i data-feather="twitter"></i></a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
-        <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i data-feather="github"></i></a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Home Section -->
-  <section id="home" class="section home-section">
-    <p class="tagline">"When driven with innovation, Limitless Possibilities are Unfolded"</p>
-    <h1>Carlus Innocent (22)</h1>
-    <h2>Tech Frontier</h2>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section about-section">
-    <h2>ABOUT</h2>
-    <p>
-      I am a tech-driven innovator passionate about building solutions that create impact. 
-      With a strong foundation in backend development and a hands-on approach to learning, 
-      I turn ideas into scalable, efficient systems. I thrive on solving complex challenges, 
-      whether in software development, leadership, or business strategy.
-    </p>
-    <p>
-      As a visionary problem-solver, I believe in "Innovation Unfolds Possibilities." 
-      My journey is fueled by the drive to code, innovate, and lead the future. 
-      Whether developing full-stack applications, optimizing systems, or leading teams, 
-      my focus is always on excellence, efficiency, and continuous growth.
-    </p>
-    <p>
-      Let’s connect, build, and shape the future together.
-    </p>
-  </section>
-
-  <!-- Resume Section -->
-  <section id="resume" class="section resume-section">
-    <h2>RESUME</h2>
-
-    <!-- Employment History -->
-    <div class="employment">
-      <h3>MY EMPLOYMENT HISTORY</h3>
-      <div class="job">
-        <h4>ICT Technician, at Hotlines Communications</h4>
-        <p class="date">December 2023 - Present</p>
-        <ul>
-          <li>Manage and optimize a diverse range of ICT systems to ensure seamless performance.</li>
-          <li>Provide comprehensive technical support across hardware, software, and network platforms.</li>
-          <li>Drive innovation by integrating emerging technologies and collaborating across teams.</li>
-        </ul>
-      </div>
     </div>
 
-    <!-- Education -->
-    <div class="education">
-      <h3>MY EDUCATION</h3>
-      <div class="edu-item">
-        <h4>Bachelor's Degree in Computer Science, Metropolitan International University, Kampala</h4>
-        <p>August 2024 - Present</p>
-      </div>
-      <div class="edu-item">
-        <h4>Secondary, St. Joseph's SS, Nansana</h4>
-        <h5>UCE and UACE Certificates</h5>
-        <p>February 2019 - November 2023</p>
-      </div>
-      <div class="edu-item">
-        <h4>Secondary, Lubiri High School, Mengo</h4>
-        <p>March 2017 - November 2018</p>
-      </div>
-      <div class="edu-item">
-        <h4>Primary, Rightway Nur. & Pri. School, Bulenga</h4>
-        <h5>PLE Certificate</h5>
-        <p>February 2009 - November 2016</p>
-      </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a tech-driven innovator passionate about building solutions that create impact. 
+                        With a strong foundation in backend development and a hands-on approach to learning, 
+                        I turn ideas into scalable, efficient systems. I thrive on solving complex challenges, 
+                        whether in software development, leadership, or business strategy.
+                    </p>
+                    <p>
+                        As a visionary problem-solver, I believe in "Innovation Unfolds Possibilities." 
+                        My journey is fueled by the drive to code, innovate, and lead the future. 
+                        Whether developing full-stack applications, optimizing systems, or leading teams, 
+                        my focus is always on excellence, efficiency, and continuous growth.
+                    </p>
+                    <p>
+                        Let’s connect, build, and shape the future together.
+                    </p>
+                    <hr>
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                        <div class="tab-links" onclick="opentab('education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+
+                        <ul>
+                            <li><span><h3>Soft Skills</h3></span></li>
+                            <li>Exceptional problem-solving and critical thinking across diverse tech challenges.</li>
+                            <li>Effective communication and collaboration in dynamic, multidisciplinary teams.</li>
+                            <li>Agile leadership and adaptability in fast-paced, innovative environments.</li>
+                            <li>Strong organizational skills and a proactive drive for continuous improvement.</li>
+                        </ul>
+                        <ul>
+                            <li><span><h3>Technical Skills</h3></span></li>
+                            <li>Robust experience in backend development with Node.js, MongoDB, and scalable system design.</li>
+                            <li>Proficient in full-stack application development for seamless frontend-backend integration.</li>
+                            <li>Skilled in API development and third-party integrations for optimized performance.</li>
+                            <li>Currently expanding my expertise by learning Java for broader software solutions.</li>
+                            <li>Adept at technical writing; crafting clear, precise documentation and process guides.</li>
+                            <li>Natural leader, managing projects and driving innovation across teams.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span><h3>ICT Technician & Tech Generalist, at Hotlines Communications</h3></span></li>
+                            <li><span>December 2023 - Present</span></li>
+                            <li>Leverage a broad spectrum of technical skills to integrate hardware, software, and network systems seamlessly.</li>
+                            <li>Innovate across multiple domains; development, support, and systems optimization, to drive digital transformation.</li>
+                            <li>Collaborate with cross-functional teams to implement creative solutions and foster continuous improvement.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span><h3>Degree</h3></span>
+                                <h4>Bachelor's Degree in Computer Science, Metropolitan International University, Kampala</h4>
+                                <p>August 2024 - Present</p>
+                            </li>
+                            <li>
+                                <span><h3>UCE and UACE Certificates</h3></span>
+                                <h4>Secondary, St. Joseph's SS, Nansana</h4>
+                                <p>February 2019 - November 2023</p>
+                            </li>
+                            <li>
+                                <h4>Secondary, Lubiri High School, Mengo</h4>
+                                <p>March 2017 - November 2018</p>
+                            </li>
+                            <li>
+                                <span><h3>PLE Certificate</h3></span>
+                                <h4>Primary, Rightway Nursery & Primary School, Bulenga</h4>
+                                <p>February 2009 - November 2016</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Skills -->
-    <div class="skills">
-      <h3>MY SKILLS</h3>
-      <!-- Soft Skills -->
-      <div class="soft-skills">
-        <h4>Soft Skills</h4>
-        <ul>
-          <li>Strong problem-solving and critical thinking abilities to tackle complex challenges.</li>
-          <li>Excellent communication and interpersonal skills, fostering effective collaboration.</li>
-          <li>Leadership and teamwork capabilities, ensuring productivity in group environments.</li>
-          <li>Adaptability and willingness to learn new technologies and methodologies.</li>
-          <li>Time management and organizational skills to handle multiple projects efficiently.</li>
-          <li>Attention to detail and a proactive approach to achieving high-quality results.</li>
-        </ul>
-      </div>
-      <!-- Technical Skills -->
-      <div class="technical-skills">
-        <h4>Technical Skills</h4>
-        <ul>
-          <li>Strong background in backend development with expertise in Node.js, MongoDB, and scalable system design.</li>
-          <li>Proficient in full-stack application development, ensuring seamless integration between frontend and backend.</li>
-          <li>Experienced in API development and third-party integrations for optimized system functionality.</li>
-          <li>Currently learning Java to expand versatility in backend and software development.</li>
-          <li>Skilled in technical writing, creating clear and well-structured documentation for projects and development processes.</li>
-          <li>Effective leader and collaborator, managing projects, guiding teams, and driving innovation.</li>
-        </ul>
-      </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Development</h2>
+                    <p></p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-uncharted"></i>
+                    <h2>Web Development</h2>
+                    <p></p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p></p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Interests -->
-    <div class="interests">
-      <h3>MY HOBBIES AND INTERESTS</h3>
-      <ul>
-        <li>I love visiting both the needy and new places in my free time</li>
-        <li>I like to play board games with other people</li>
-      </ul>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>THe app the connects people all over the world to one global village</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>THe app the connects people all over the world to one global village</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-1.png" alt="work1">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>THe app the connects people all over the world to one global village</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
     </div>
 
-    <!-- References -->
-    <div class="references">
-      <h3>MY REFERENCES</h3>
-      <div class="ref-item">
-        <h4>Kijjire Denis, Managing Director Hotlines Communications</h4>
-        <ul>
-          <li>+256752888266</li>
-          <li>deniskijjire@gmail.com</li>
-        </ul>
-      </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>carlusinnocentainembabazi@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>+256 741351126</p>
+                    <div class="social-icons">
+                        <a href="https://x.com/carlus_innocent"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://github.com/CarlusInnocent"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/carlus-innocent-ainembabazi-7453082a5/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div>
+                <p><i>"When driven with innovation, <br>Limitless Possibilities are Unfolded"</i></p>
+            </div>
+            <p class="copyright-inner">Copyright © CarlusInnocent</p>
+        </div>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section contact-section">
-    <h2>MY CONTACT DETAILS</h2>
-    <p><strong>Name:</strong> Carlus Innocent Ainembabazi</p>
-    <p><strong>Address:</strong> Kampala - Uganda</p>
-    <p><strong>Phone number:</strong> +256741351126</p>
-    <p><strong>E-mail:</strong> <a href="mailto:carlusinnocentainembabazi@gmail.com">carlusinnocentainembabazi@gmail.com</a></p>
-  </section>
+    <script src="app.js"></script>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 - Carlus Innocent</p>
-  </footer>
-
-  <!-- Initialize Feather Icons -->
-  <script>
-    feather.replace();
-  </script>
 </body>
 </html>
