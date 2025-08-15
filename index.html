@@ -1,203 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="address-card-solid.svg" type="image/x-icon">
-    <title>ACI-portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/1ef7b15859.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACI-Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/1ef7b15859.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <h1>ICA</h1>
-                    Technologies
-                </div>
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-regular fa-circle-xmark fas" onclick="closemenu()"></i>
+
+  <div class="contents">
+    <div class="profile-card">
+      
+      <div class="background-circles"></div>
+
+      <div class="main-grid">
+
+        <!-- Left side: Avatar and overlay -->
+        <div class="image-container">
+          <img src="./user.png" alt="Avatar" class="character-img">
+          <div class="overlay-panel">
+            <p>Innovate · UnFold Possibilities</p>
+            <div class="types">
+              <button><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+              <button><i class="fa fa-download" aria-hidden="true"></i></button>
+              <button><i class="fa fa-share-square-o" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right side: Icons, ribbon, text -->
+        <div class="right-grid">
+
+          <!-- Social icons in orange box -->
+          <div class="orange-box">
+            <div class="icon-grid">
+              <a href="#" ><i class="fab fa-facebook-f"></i></a>
+              <a href="#" ><i class="fab fa-twitter"></i></a>
+              <a href="#" ><i class="fab fa-instagram"></i></a>
+              <a href="#" ><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <!-- Ribbon / placeholder box -->
+          <div class="ribbon-box">
+            <i class="fa fa-address-card-o fa-3x" aria-hidden="true"></i>
+          </div>
+
+          <!-- Bottom text section -->
+          <div class="bottom-right">
+            <div class="vertical-line"></div>
+            <div class="text-content">
+              <h1><span class="green">Carlus Innocent</span></h1>
+              <p>Passionate<br><strong>about building smart,<br>scalable web experiences</strong></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="banner">
+        <ul>
+            <li style="--accent-color:#0B374D">
+                <div class="icon"><i class="fa-solid fa-shield-halved"></i></i></div>
+                <div class="title">Cyber Security</div>
+                <div class="descr">Protecting systems, networks, and data through security best practices.</div>
+            </li>
+            <li style="--accent-color:#1286A8">
+                <div class="icon"><i class="fa-brands fa-java"></i></div>
+                <div class="title">Java</div>
+                <div class="descr">Developing robust and scalable backend applications with OOP principles.</div>
+            </li>
+            <li style="--accent-color:#D2B53B">
+                <div class="icon"><i class="fa-solid fa-users"></i></div>
+                <div class="title">Leadership</div>
+                <div class="descr">Guiding teams and projects towards achieving shared goals effectively.</div>
+            </li>
+            <li style="--accent-color:#DA611E">
+                <div class="icon"><i class="fa-solid fa-microchip"></i></div>
+                <div class="title">Computer Science</div>
+                <div class="descr">Exploring algorithms, data structures, and problem-solving in tech.</div>
+            </li>
+            <li style="--accent-color:#AC2A1A">
+                <div class="icon"><i class="fa-brands fa-github"></i></div>
+                <div class="title">Github</div>
+                <div class="descr">Collaborating on open-source projects and managing code repositories.</div>
+            </li>
+        </ul>
+    </div>
+    <div class="about">
+        <h1 class="sub-title">About Me</h1>
+        <div class="bottom-right-copy">
+            
+            <p>
+                I am a tech-driven innovator passionate about building solutions that create impact. 
+                With a strong foundation in backend development and a hands-on approach to learning, 
+                I turn ideas into scalable, efficient systems. I thrive on solving complex challenges, 
+                whether in software development, leadership, or business strategy.
+            </p>
+            <p>
+                As a visionary problem-solver, I believe in "Innovation Unfolds Possibilities." 
+                My journey is fueled by the drive to code, innovate, and lead the future. 
+                Whether developing full-stack applications, optimizing systems, or leading teams, 
+                my focus is always on excellence, efficiency, and continuous growth.
+            </p>
+            <p>
+                Let’s connect, build, and shape the future together.
+            </p>
+            
+        </div>
+    </div>
+
+    <div class="about">
+        <h1 class="sub-title">Skills</h1>
+            <div class="bottom-right-copy">
+                <ul>
+                    <li><span><h3>Soft Skills</h3></span></li>
+                    <li>Exceptional problem-solving and critical thinking across diverse tech challenges.</li>
+                    <li>Effective communication and collaboration in dynamic, multidisciplinary teams.</li>
+                    <li>Agile leadership and adaptability in fast-paced, innovative environments.</li>
+                    <li>Strong organizational skills and a proactive drive for continuous improvement.</li>
                 </ul>
-                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Software Developer</p>
-                <h1>Hi, <br>I'm <span>Carlus Innocent</span> <br>From Uganda</h1>
+                <ul>
+                    <li><span><h3>Technical Skills</h3></span></li>
+                    <li>Robust experience in backend development with Node.js, MongoDB, and scalable system design.</li>
+                    <li>Proficient in full-stack application development for seamless frontend-backend integration.</li>
+                    <li>Skilled in API development and third-party integrations for optimized performance.</li>
+                    <li>Currently expanding my expertise by learning Java for broader software solutions.</li>
+                    <li>Adept at technical writing; crafting clear, precise documentation and process guides.</li>
+                    <li>Natural leader, managing projects and driving innovation across teams.</li>
+                </ul>
             </div>
-        </div>
-
     </div>
 
-    <div id="about">
+    <section class="contact-section">
+
+
         <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="user.png" alt="">
+            <div class="screen">
+            <div class="screen-header">
+                <div class="screen-header-left">
+                <div class="screen-header-button close"></div>
+                <div class="screen-header-button maximize"></div>
+                <div class="screen-header-button minimize"></div>
                 </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>
-                        I am a tech-driven innovator passionate about building solutions that create impact. 
-                        With a strong foundation in backend development and a hands-on approach to learning, 
-                        I turn ideas into scalable, efficient systems. I thrive on solving complex challenges, 
-                        whether in software development, leadership, or business strategy.
-                    </p>
-                    <p>
-                        As a visionary problem-solver, I believe in "Innovation Unfolds Possibilities." 
-                        My journey is fueled by the drive to code, innovate, and lead the future. 
-                        Whether developing full-stack applications, optimizing systems, or leading teams, 
-                        my focus is always on excellence, efficiency, and continuous growth.
-                    </p>
-                    <p>
-                        Let’s connect, build, and shape the future together.
-                    </p>
-                    <hr>
-                    <div class="tab-titles">
-                        <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
-                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
-                        <div class="tab-links" onclick="opentab('education')">Education</div>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-
-                        <ul>
-                            <li><span><h3>Soft Skills</h3></span></li>
-                            <li>Exceptional problem-solving and critical thinking across diverse tech challenges.</li>
-                            <li>Effective communication and collaboration in dynamic, multidisciplinary teams.</li>
-                            <li>Agile leadership and adaptability in fast-paced, innovative environments.</li>
-                            <li>Strong organizational skills and a proactive drive for continuous improvement.</li>
-                        </ul>
-                        <ul>
-                            <li><span><h3>Technical Skills</h3></span></li>
-                            <li>Robust experience in backend development with Node.js, MongoDB, and scalable system design.</li>
-                            <li>Proficient in full-stack application development for seamless frontend-backend integration.</li>
-                            <li>Skilled in API development and third-party integrations for optimized performance.</li>
-                            <li>Currently expanding my expertise by learning Java for broader software solutions.</li>
-                            <li>Adept at technical writing; crafting clear, precise documentation and process guides.</li>
-                            <li>Natural leader, managing projects and driving innovation across teams.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span><h3>ICT Technician & Tech Generalist, at Hotlines Communications</h3></span></li>
-                            <li><span>December 2023 - Present</span></li>
-                            <li>Leverage a broad spectrum of technical skills to integrate hardware, software, and network systems seamlessly.</li>
-                            <li>Innovate across multiple domains; development, support, and systems optimization, to drive digital transformation.</li>
-                            <li>Collaborate with cross-functional teams to implement creative solutions and foster continuous improvement.</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li>
-                                <span><h3>Degree</h3></span>
-                                <h4>Bachelor's Degree in Computer Science, Metropolitan International University, Kampala</h4>
-                                <p>August 2024 - Present</p>
-                            </li>
-                            <li>
-                                <span><h3>UCE and UACE Certificates</h3></span>
-                                <h4>Secondary, St. Joseph's SS, Nansana</h4>
-                                <p>February 2019 - November 2023</p>
-                            </li>
-                            <li>
-                                <h4>Secondary, Lubiri High School, Mengo</h4>
-                                <p>March 2017 - November 2018</p>
-                            </li>
-                            <li>
-                                <span><h3>PLE Certificate</h3></span>
-                                <h4>Primary, Rightway Nursery & Primary School, Bulenga</h4>
-                                <p>February 2009 - November 2016</p>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="screen-header-right">
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Software Development</h2>
-                    <p></p>
-                    <a href="#">Learn More</a>
+            <div class="screen-body">
+                <div class="screen-body-item left">
+                <div class="app-title">
+                    <span>CONTACT</span>
+                    <span>US</span>
                 </div>
-                <div>
-                    <i class="fa-brands fa-uncharted"></i>
-                    <h2>Web Development</h2>
-                    <p></p>
-                    <a href="#">Learn More</a>
+                <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
                 </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>App Development</h2>
-                    <p></p>
-                    <a href="#">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="work-1.png" alt="work1">
-                    <div class="layer">
-                        <h3>Social Media App</h3>
-                        <p>THe app the connects people all over the world to one global village</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <div class="screen-body-item">
+                <div class="app-form">
+                    <div class="app-form-group">
+                    <input class="app-form-control" placeholder="NAME" value="Krisantus Wanandi">
+                    </div>
+                    <div class="app-form-group">
+                    <input class="app-form-control" placeholder="EMAIL">
+                    </div>
+                    <div class="app-form-group">
+                    <input class="app-form-control" placeholder="CONTACT NO">
+                    </div>
+                    <div class="app-form-group message">
+                    <input class="app-form-control" placeholder="MESSAGE">
+                    </div>
+                    <div class="app-form-group buttons">
+                    <button class="app-form-button">CANCEL</button>
+                    <button class="app-form-button">SEND</button>
                     </div>
                 </div>
-                
+                </div>
             </div>
-            <a href="#" class="btn">See More</a>
-        </div>
-    </div>
-
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-regular fa-paper-plane"></i>carlusinnocentainembabazi@gmail.com</p>
-                    <p><i class="fa-solid fa-phone-volume"></i>+256 741351126</p>
-                    <div class="social-icons">
-                        <a href="https://x.com/carlus_innocent"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://github.com/CarlusInnocent"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/carlus-innocent-ainembabazi-7453082a5/"><i class="fa-brands fa-linkedin"></i></a>
-                    </div>
-                    <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
             </div>
         </div>
 
-        <div class="copyright">
-            <div>
-                <p><i>"When driven with innovation, <br>Limitless Possibilities are Unfolded"</i></p>
-            </div>
-            <p class="copyright-inner">Copyright © CarlusInnocent</p>
-        </div>
-    </div>
 
-    <script src="app.js"></script>
+    </section>
 
+  </div>
+  
 </body>
 </html>
